@@ -1,0 +1,35 @@
+<!-- Modal -->
+<div class="modal fade" id="updateModal{{row[0]}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="{{ url_for('updateBooks')}}" method="post">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="mb-3">
+                                <label for="kodeBuku" class="form-label">Kode Buku</label>
+                                <input type="text" class="form-control" id="kodeBuku" readonly value="{{ row[0]}}" name="kodeBuku" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="judulBuku" class="form-label">Judul Buku</label>
+                                <input type="text" class="form-control" id="judulBuku" value="{{ row[1]}}" name="judulBuku" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="stock" class="form-label">Stock</label>
+                                <input type="text" class="form-control" id="stock" value="{{ row[2]}}" name="stock" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" onclick="confirm('Anda Yakin');">UPDATE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

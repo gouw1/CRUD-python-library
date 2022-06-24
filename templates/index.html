@@ -1,0 +1,271 @@
+{% extends 'base.html' %}
+{% block title %} Menu Utama {% endblock %}
+
+
+{% block content %} 
+<!-- menu home -->
+<div class="container" id="home">
+    <div class="row">
+        <div class="col mt-5">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='img/b1.jpg')}}" class="d-block w-100" alt="..." height="300">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/b2.jpg')}}" class="d-block w-100" alt="..." height="300">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/b3.jpg')}}" class="d-block w-100" alt="..." height="300">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+</div>
+<!-- end menu home -->
+<!-- start tentang kami -->
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-5">
+            <h3>Tentang Kami</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-justify">
+            <p>Perpustakaan kami menyediakan peminjaman buku yang dapat dilakukan secara online melalui website ini, perpustakaan ini memiliki berbagai jenis buku dari seluruh penjuru dunia</p>
+        </div>
+    </div>
+</div>
+<!-- end tentang kami -->
+<!-- start buku -->
+<div class="container" id="buku">
+    <div class="row">
+        <div class="col text-center mb-3">
+            <h3> Buku</h3>
+        </div>
+    </div>
+    <div class="row">
+        <!-- start gambar buku 1 baris 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/ss1.jpeg')}}" class="card-img-top" alt="..." height="400" >
+                <h4 style="height:90px"><div class="card-header" style="height:100px">I Am Malala
+                    <span class="float-end">001</span>
+                </div></h4>
+                <div class="card-body" style="height:350px">
+                <p class="card-text">I Am Malala: Kisah Gadis yang Berdiri untuk Pendidikan dan Ditembak oleh Taliban adalah buku otobiografi oleh Malala Yousafzai, yang ditulis bersama dengan Christina Lamb. Itu diterbitkan pada 8 Oktober 2013, oleh Weidenfeld & Nicolson di Inggris dan Little, Brown and Company di AS.</p>
+                <div class="d-grid gap-2">
+                  <a href="#booking" class="btn btn-outline-info">Booking Now</a></div>
+                </div>
+              </div>
+        </div>
+    <!-- end gambar buku 1 baris 1 -->
+        <!-- start gambar buku 1 baris 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/s1.jpeg')}}" class="card-img-top" alt="..." height="400">
+                <h4 style="height:90px"><div class="card-header" style="height:100px">The immortal Life of Henrietta Lacks
+                    <span class="float-end">002</span>
+                </div></h4>
+                <div class="card-body" style="height:350px">
+                <p class="card-text"> The Immortal Life of Henrietta Lacks adalah buku non-fiksi karya penulis Amerika Rebecca Skloot. Itu adalah pemenang 2011 dari Penghargaan Komunikasi Akademi Nasional untuk karya kreatif terbaik yang membantu pemahaman publik tentang topik dalam sains, teknik atau kedokteran. </p>
+                <div class="d-grid gap-2">
+                  <a href="#booking" class="btn btn-outline-info">Booking Now</a></div>
+                </div>
+              </div>
+        </div>
+    <!-- end gambar buku 1 baris 1 -->
+        <!-- start gambar buku 1 baris 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/s2.jpeg')}}" class="card-img-top" alt="..." height="400">
+                <h4 style="height:90px"><div class="card-header" style="height:100px">Fifty Shades of Grey
+                    <span class="float-end">003</span>
+                </div></h4>
+                <div class="card-body" style="height:350px">
+                <p class="card-text">Fifty Shades adalah seri novel erotis karya E. L. James, awalnya merupakan trilogi yang terdiri dari Fifty Shades of Grey, Fifty Shades Darker dan Fifty Shades Freed. Serial ini menelusuri hubungan yang mendalam antara lulusan perguruan tinggi Anastasia Steele dan pebisnis muda Christian Grey.</p>
+                <div class="d-grid gap-2">
+                  <a href="#booking" class="btn btn-outline-info">Booking Now</a></div>
+                </div>
+              </div>
+        </div>
+    <!-- end gambar buku 1 baris 1 -->
+     <!-- start gambar buku 2 baris 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/s3.jpeg')}}" class="card-img-top" alt="..." height="400">
+                <h4 style="height:90px"><div class="card-header" style="height:100px">Gone Girl
+                    <span class="float-end">004</span>
+                </div></h4>
+                <div class="card-body" style="height:350px">
+                    <p class="card-text">Gone Girl adalah sebuah novel lama cerita seru karya penulis Gillian Flynn. Karya tersebut diterbitkan oleh Crown Publishing Group tepat pada Juni 2012. Novel tersebut kemudian masuk pada daftar penjualan terbaik pada sebuah kota bernama New York pada New York Times.</p>
+                <div class="d-grid gap-2">
+                    <a href="#booking" class="btn btn-outline-info">Booking Now</a></div>
+                </div>
+              </div>
+        </div>
+        <!-- end gambar buku 2 baris 1 -->
+    </div>
+
+</div>
+<!-- end buku -->
+<!-- start fasilitas -->
+<div class="container" id="fasilitas">
+    <div class="row">
+        <div class="col text-center mb-3">
+            <h3>Ketentuan</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- start gambar fasilitas 1 baris 1 -->
+        <div class="col-md">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pengembalian</h5>
+                  <p class="card-text">Pengembalian dibatasi waktu paling lama 4 minggu, jika melewati akan dikenakan denda</p>
+                </div>
+              </div>
+        </div>
+        <!-- end gambar fasilitas 1 baris 1 -->
+        <!-- start gambar fasilitas 2 baris 1 -->
+        <div class="col-md">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Denda</h5>
+                  <p class="card-text">Denda dari peminjaman buku sebesar 5 ribu rupiah dalam sehari</p>
+                </div>
+              </div>
+        </div>
+        <!-- end gambar fasilitas 2 baris 1 -->
+        <!-- start gambar fasilitas 3 baris 1 -->
+        <div class="col-md mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Waktu Peminjaman</h5>
+                  <p class="card-text">Peminjaman dapat dilakukan setiap hari kecuali tanggal merah</p>
+                </div>
+              </div>
+        </div>
+        <!-- end gambar fasilitas 3 baris 1 -->
+    </div>
+    <div class="row">
+        <!-- start gambar fasilitas 1 baris 1 -->
+        <div class="col-md">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Jumlah Buku</h5>
+                  <p class="card-text">Perpustakaan menyediakan 100.541 buku dari berbagai penjuru dunia</p>
+                </div>
+              </div>
+        </div>
+        <!-- end gambar fasilitas 1 baris 1 -->
+        <!-- start gambar fasilitas 2 baris 1 -->
+        <div class="col-md">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Perpanjangan Waktu</h5>
+                  <p class="card-text">Perpanjangan waktu dapat dilakukan secara online dengan menghubungi admin</p>
+                </div>
+              </div>
+        </div>
+        <!-- end gambar fasilitas 2 baris 1 -->
+        <!-- start gambar fasilitas 3 baris 1 -->
+        <div class="col-md mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Waktu Melayani</h5>
+                  <p class="card-text">Waktu pelayanan jam 08.00-12.00 dan 13.00-20.00</p>
+                </div>
+              </div>
+        </div>
+        <!-- end gambar fasilitas 3 baris 1 -->
+    </div>
+</div>
+<!-- end fasilitas -->
+
+<!-- start booking buku -->
+<div class="container" id="booking">
+    <div class="row">
+        <div class="col text-center mb-3">
+            <h4>Form Booking Book</h4>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+          {% for message in messages %}
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Terima Kasih</strong> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          {% endfor %}
+
+        {% endif %}
+      {% endwith %}
+
+      </div>
+    </div>
+
+    <div class="row">
+        <!-- start ini alamat perpustakaan -->
+        <div class="col-lg-4">
+            <div class="card text-white bg-secondary">
+                <div class="card-body">
+                    <div class="card-title text-center"><h3>Hubungi Kami</h3></div>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h3>My Office</h3></li>
+                <li class="list-group-item">Jl. Baru</li>
+                <li class="list-group-item">Singkawang - West kalimantan</li>
+                <li class="list-group-item">Phone: 081252503754100</li>
+                <li class="list-group-item">email: perpustakaanJRW@gmail.com</li>
+              </ul>            
+        </div>
+        <!-- end ini alamat perpustakaan -->
+        <!-- start Form Pemesanan Buku -->
+        <div class="col-lg-4">
+          <form action="/#booking" method="post">
+              <div class="mb-3">
+                <label for="NIM" class="form-label">NIM</label>
+                <input type="text" class="form-control" id="NIM" placeholder="Masukkan NIM Anda" name="nim" autocomplete="off" required>
+              </div>
+              <div class="mb-3">
+                <label for="kodeBuku" class="form-label">Kode Buku</label>
+                <input type="text" class="form-control" id="kodeBuku" placeholder="Kode Buku" name="kodeBuku" autocomplete="off" required>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success btn-lg btn-block" onclick="confirm('Anda Yakin')">Konfirmasi Pemesanan</button>
+              </div>
+          </form>
+        </div>
+        <!-- end Form Peminjaman Buku -->
+
+    </div>
+</div>
+<!-- end booking buku -->
+
+{% endblock %}
